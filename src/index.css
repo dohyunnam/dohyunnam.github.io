@@ -20,28 +20,14 @@ nav {
 .nav-button:hover {
   background-color: #666;
   background-color: #fff;
-  text-decoration: underline;
-}
-
-.nav-link {
-  margin-left: 20px;
-  padding: 0;
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
-}
-
-.nav-link:hover {
-  color: #666;
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 .contact-popup{
   color: #787878;
 }
 .contact-list{
   color: #787878;
-  font-size: 12px;
+  font-size: 20px;
+  display: list-item;
+  margin-left : 1em;
 }

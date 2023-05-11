@@ -1,37 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import "./index.css";
+import ContactPage from './pages/ContactPage';
+import ProjectPage from './pages/ProjectPage'
+
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [isContactPopupOpen, setIsContactPopupOpen] = useState(false);
-
-  const incrementCount = () => {
-    setCount(count + 1);
-  };
-
-  const toggleContactPopup = () => {
-    setIsContactPopupOpen(!isContactPopupOpen);
-  };
-
   return (
     <div className="container">
       <header>
         <nav>
-          <a href="#" className="nav-link">Home</a>
-          <a href="#" className="nav-link">About</a>
-          <button className="nav-button" onClick={toggleContactPopup}>
-            Contact
-          </button>
-          {isContactPopupOpen && <ContactPopup />}
+          <a href="/" className="nav-button">Home</a>
+          <a href="/Contact" className="nav-button">Contacts</a>
+          <a href="/Project" className="nav-button">Projects</a>
         </nav>
       </header>
       <main>
         <section className="hero">
           <div className="hero-content">
-            <h1>Hello, I'm Dohyun</h1>
+            <h1>Hello, I'm Dohyun.</h1>
             <p>I'm a data science student at the University of Hong Kong.</p>
-            <p>I'm particularly interested in natural language processing.</p>
+            <p>Scroll down for more info 👇👇👇</p>
           </div>
         </section>
         <section className="features">
@@ -47,43 +36,22 @@ function App() {
             <i className="fas fa-code"></i>
             <h3>Programming</h3>
             <p>
-              I have experience with Python, Java, and JavaScript, among other
+              I have experience with Python, R, and Java, among other
               languages.
             </p>
           </div>
           <div className="feature">
             <i className="fas fa-language"></i>
-            <h3>Natural Language Processing</h3>
+            <h3>Machine Learning</h3>
             <p>
-              I'm passionate about using computers to understand and generate
-              human language.
+              I'm passionate about machine learning, specifically NLP. 
             </p>
           </div>
         </section>
-        <section className="counter">
-          <h2>Click the button to increment the counter:</h2>
-          <p>Counter: {count}</p>
-          <button onClick={incrementCount}>Increment</button>
-        </section>
       </main>
       <footer>
-        <p>&copy; 2023 Dohyun Nam. All rights reserved.</p>
+        <p>updated on May 11th, 2023</p>
       </footer>
-    </div>
-  );
-}
-
-function ContactPopup() {
-  return (
-    <div className="contact-popup">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/dohyun-nam-855a16220/" className="contact-list">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://github.com/dohyunnam" className="contact-list">GitHub</a>
-        </li>
-      </ul>
     </div>
   );
 }
