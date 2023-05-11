@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
 import "./index.css";
-import ContactPage from './ContactPage';
-import ProjectPage from './ProjectPage'
 
 
 function App() {
@@ -11,8 +9,6 @@ function App() {
       <header>
         <nav>
           <a href="/" className="nav-button">Home</a>
-          <a href="./contact" className="nav-button">Contacts</a>
-          <a href="./project" className="nav-button">Projects</a>
         </nav>
       </header>
       <main>
@@ -48,6 +44,22 @@ function App() {
             </p>
           </div>
         </section>
+
+        <div className="container">
+        <main>
+          <h1>Contacts</h1>
+          <a href="https://www.linkedin.com/in/dohyun-nam-855a16220/" className="contact-list">LinkedIn</a>
+          <a href="https://github.com/dohyunnam" className="contact-list">GitHub</a>
+        </main>
+      </div>
+      
+      <div className="container">
+        <main>
+          <h1>Projects</h1>
+          <p>empty</p>
+        </main>
+      </div>
+
       </main>
       <footer>
         <p>updated on May 11th, 2023</p>
