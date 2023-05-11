@@ -5,8 +5,8 @@ function ProjectPage() {
         <header>
           <nav>
             <a href="/" className="nav-button">Home</a>
-            <a href="/contact" className="nav-button">Contacts</a>
-            <a href="/project" className="nav-button">Projects</a>
+            <a href="./contact" className="nav-button">Contacts</a>
+            <a href="./project" className="nav-button">Projects</a>
           </nav>
         </header>
         <main>

@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "./App";
-import ContactPage from "./pages/ContactPage";
-import ProjectPage from "./pages/ProjectPage";
+import ContactPage from "./ContactPage";
+import ProjectPage from "./ProjectPage";
 
 ReactDOM.render(
     <Router>
