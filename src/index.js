@@ -9,8 +9,8 @@ ReactDOM.render(
     <Router>
         <Routes>
             <Route path="/" element={<App />} />
-            <Route path="/Contact" element={<ContactPage />} />
-            <Route path="/Project" element={<ProjectPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/project" element={<ProjectPage />} />
         </Routes>
     </Router>,
   document.getElementById("root")
