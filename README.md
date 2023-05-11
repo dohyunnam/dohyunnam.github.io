@@ -1,4 +1,4 @@
-LINK: https://dohyunnam.github.io/my-website/
+LINK: https://dohyunnam.github.io
 
 # Getting Started with Create React App
 
